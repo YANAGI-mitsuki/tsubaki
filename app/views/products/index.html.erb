@@ -7,7 +7,9 @@
     <% @products.each do |p|%>
     <tr>
         <td><%= p.name %></td>
-        <td><%= link_to '詳細', action: :show, id: p.id %></td>
+        <!-- <td><%= link_to '詳細', action: :show, id: p.id %></td> -->
+        <!-- <td><%= link_to '詳細', product_path(p) %></td> -->
+        <td><%= link_to '詳細', p %></td>
     </tr>
     <% end %>
 </table>
